@@ -8,8 +8,8 @@ trigger:
 
 resources:
   pipelines:
-  - pipeline: pkranjan.azure-pipeline-slave
-    source: pkranjan.azure-pipeline-slave
+  - pipeline: pkranjan.azure-pipeline-master
+    source: pkranjan.azure-pipeline-master
     trigger:
       branches:
         include:
