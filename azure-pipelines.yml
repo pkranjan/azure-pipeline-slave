@@ -6,6 +6,15 @@
 trigger:
 - main
 
+resources:
+  pipelines:
+  - pipeline: pkranjan.azure-pipeline-slave
+    source: pkranjan.azure-pipeline-slave
+    trigger:
+      branches:
+        include:
+        - main
+
 pool:
   vmImage: ubuntu-latest
 
